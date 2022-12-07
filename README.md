@@ -51,3 +51,17 @@ Note: Pattern can be a single word or a phrase and can contain spaces. Must be e
 countPatterns("ababab", "ab"); // 3
 countPatterns("bark dog dogma", "dog"); // 2
 ```
+
+# Exercise 4: syntax highlighter
+
+Write a function called `highlightSyntax(content: string): StyledContent[]` which takes one argument (content to find "cat" and "dog" words in it and make them bold). Function returns an array of tuples (type StyledContent). Each tuple's first item is the word and the second item is the style of the word.
+
+"cat" and "dog" will be always printed bold by syntaxHighlighter function no matter what the content passed to it. 
+
+## Example
+
+```ts
+highlightSyntax("the cat jumped over the old dog"); // [['the', Style.None], ['cat', Style.Bold], ['jumped', Style.None], ['over', Style.None], ['the', Style.None], ['old', Style.None], ['dog', Style.Bold]]
+hightlightSyntax(" cat  cat one two"); // [['cat', Style.Bold], ['cat', Style.Bold], ['one', Style.None], ['two', Style.None]]
+hightlightSyntax(""); // []
+```
