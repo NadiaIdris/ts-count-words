@@ -6,8 +6,11 @@ export function makeRanges(numbers: number[]): string[] {
   // Create a variable to store the current range.
   let currentRange: number[] = [];
   // Loop over numbers array.
-  // If next number is one more than current number, add current num to range. Continue the loop.
-  // Add current num to currentRange. Format currentRange to a string and push to ranges array. Reset currentRange to empty array.
+  // If next number is one more than current number, 
+  //    add current num to range.Continue the loop.
+  // Add current num to currentRange. 
+  // Format currentRange to a string and push to ranges array.
+  // Reset currentRange to empty array.
   for (let num = 0; num < numbers.length; num++) {
     const nextNum = numbers[ num + 1 ];
     const currentNum = numbers[ num ];
