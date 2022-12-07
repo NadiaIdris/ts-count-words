@@ -62,6 +62,6 @@ Write a function called `highlightSyntax(content: string): StyledContent[]` whic
 
 ```ts
 highlightSyntax("the cat jumped over the old dog"); // [['the', Style.None], ['cat', Style.Bold], ['jumped', Style.None], ['over', Style.None], ['the', Style.None], ['old', Style.None], ['dog', Style.Bold]]
-hightlightSyntax(" cat  cat one two"); // [['cat', Style.Bold], ['cat', Style.Bold], ['one', Style.None], ['two', Style.None]]
-hightlightSyntax(""); // []
+highlightSyntax(" cat  cat one two"); // [['cat', Style.Bold], ['cat', Style.Bold], ['one', Style.None], ['two', Style.None]]
+highlightSyntax(""); // []
 ```
