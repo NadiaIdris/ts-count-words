@@ -1,4 +1,4 @@
-# Word Counter written in TypeScript
+# Execises written in TypeScript
 
 ## Install project dependencies
 
@@ -61,7 +61,7 @@ Write a function called `highlightSyntax(content: string): StyledContent[]` whic
 ## Example
 
 ```ts
-highlightSyntax("the cat jumped over the old dog"); // [['the', Style.None], ['cat', Style.Bold], ['jumped', Style.None], ['over', Style.None], ['the', Style.None], ['old', Style.None], ['dog', Style.Bold]]
-highlightSyntax(" cat  cat one two"); // [['cat', Style.Bold], ['cat', Style.Bold], ['one', Style.None], ['two', Style.None]]
+highlightSyntax("the cat jumped over the old dog"); // [['the', 'none'], ['cat', 'bold'], ['jumped', 'none'], ['over', 'none'], ['the', 'none'], ['old', 'none'], ['dog', 'bold']]
+highlightSyntax("cat cat one two"); // [['cat', 'bold'], ['cat', 'bold'], ['one', 'none'], ['two', 'none']]
 highlightSyntax(""); // []
 ```
